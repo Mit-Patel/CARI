@@ -1,2 +1,2 @@
 # CARI
-A home automation system for controlling home appliances using Android App.
+We have developed a home automation system to automate the control of the appliances of a house using an Android Application and Raspberry Pi. The App can communicate with the Raspberry Pi acting as a server via Wi-Fi. The implementation of this system was done using Python (Server-Side), Android - Java (Client-Side), and Socket Programming for the communication. Apart from that we also developed roles management for the appliances of the house i.e. Restrict one from using a particular appliance.
