@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cari_background_image"
+    android:backgroundTint="@color/blue_200_overlay"
+    android:backgroundTintMode="src_over"
+    tools:context=".AddUserActivity">
+    <!--toolbar and header-->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_bar_layout"
+        android:layout_centerInParent="true"
+        android:layout_margin="40dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/create_user_logo" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/create_user_edit_text"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/create_user_image_corner"
+                android:padding="10dp"
+                android:src="@drawable/create_user" />
+
+            <EditText
+                android:id="@+id/txt_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#00000000"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:paddingStart="8dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/create_user_edit_text"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/create_user_image_corner"
+                android:padding="10dp"
+                android:src="@drawable/create_user" />
+
+            <EditText
+                android:id="@+id/txt_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#00000000"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:paddingStart="8dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/create_user_edit_text"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/create_user_image_corner"
+                android:padding="10dp"
+                android:src="@drawable/create_user_mail" />
+
+            <EditText
+                android:id="@+id/txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#00000000"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="8dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/create_user_edit_text"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/create_user_image_corner"
+                android:padding="10dp"
+                android:src="@drawable/create_user" />
+
+            <EditText
+                android:id="@+id/txt_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#00000000"
+                android:hint="Username"
+                android:inputType="text"
+                android:paddingStart="8dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/create_user_edit_text"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/create_user_image_corner"
+                android:padding="10dp"
+                android:src="@drawable/ic_lock" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#00000000"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingStart="8dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/create_user_button"
+            android:onClick="createClick"
+            android:text="Create"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CARI</string>
+
+    <string name="error_invalid_username">This username is invalid</string>
+    <string name="error_invalid_email">This email is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+
+    <string name="about_us">Controlling Appliances using Raspberry Pi (CARI)\n\nCARI has been developed by the students of Computer Department of A.V.Parekh Technical Institute under the proper guidance of Mr. Niraj R. Trivedi, faculty member of the college.\n This app can control home appliances and provides various electricity usage analysis in the form of graphs. It can also manage the users and restrict them to have access to particular appliance,room or house.\n\nDeveloped By:\nSanjana B. Purohit\nMit K. Patel\nNitant N. Joshi\n\nGuided By:\nNiraj R. Trivedi</string>
+
+</resources>

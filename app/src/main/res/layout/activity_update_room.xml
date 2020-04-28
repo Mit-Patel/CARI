@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cari_background_image"
+    android:backgroundTint="@color/blue_200_overlay"
+    android:backgroundTintMode="src_over"
+
+    tools:context=".UpdateRoomActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/app_bar_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40dp"
+        android:src="@drawable/update" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cari_card_view_update_user"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/icon"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        app:cardCornerRadius="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:textCursorDrawable="@null"
+                android:backgroundTint="@color/blue_A700"
+                android:hint="Room Name"
+                android:inputType="text"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edtNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:textCursorDrawable="@null"
+                android:layout_weight="1"
+                android:backgroundTint="@color/blue_A700"
+                android:hint="Room Number"
+                android:inputType="number"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/update_room_roomType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/blue_A700">
+
+            </Spinner>
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0091EA"
+                android:text="Update"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

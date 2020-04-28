@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ProgressBar.White" parent="@style/AppTheme">
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+
+    <style name="EditText.White" parent="@style/AppTheme">
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="colorControlHighlight">@android:color/white</item>
+        <item name="colorControlNormal">@color/grey_10</item>
+    </style>
+
+    <style name="EditText.White.Hint" parent="@style/EditText.White">
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:textColorHint">@color/grey_10</item>
+    </style>
+
+    <style name="RatingBarSmall" parent="android:Widget.DeviceDefault.Light.RatingBar">
+        <item name="android:progressDrawable">@drawable/fan_speed_progress</item>
+        <item name="android:indeterminateDrawable">@drawable/fan_speed_progress</item>
+        <!--<item name="android:minHeight">@dimen/rating_min_height</item>-->
+        <!--<item name="android:maxHeight">@dimen/rating_min_width</item>-->
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/red_500</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/blue_A700</item>
+    </style>
+</resources>

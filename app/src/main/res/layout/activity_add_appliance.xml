@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cari_background_image"
+    android:backgroundTint="@color/blue_200_overlay"
+    android:backgroundTintMode="src_over"
+    tools:context=".AddApplianceActivity">
+    <!--toolbar and header-->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/app_bar_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40dp"
+        android:src="@drawable/ic_add_black" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/icon"
+        android:id="@+id/cari_card_view_create_user"
+        android:layout_width="300dp"
+        android:layout_height="330dp"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        app:cardCornerRadius="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_appliance_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:textCursorDrawable="@null"
+
+                android:layout_weight="1"
+                android:backgroundTint="@color/blue_A700"
+                android:hint="Appliance Name"
+                android:inputType="text"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_appliance_no"
+                android:textCursorDrawable="@null"
+                android:paddingStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/blue_A700"
+                android:hint="Appliance Number"
+                android:inputType="number"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+
+            <Spinner
+                android:id="@+id/et_appliance_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/blue_A700" />
+
+
+            <Spinner
+                android:id="@+id/et_appliance_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/blue_A700" />
+
+
+            <Button
+                android:id="@+id/btn_appliance_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/blue_A700"
+                android:text="Add appliance"
+                android:textColor="@android:color/white"
+                />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

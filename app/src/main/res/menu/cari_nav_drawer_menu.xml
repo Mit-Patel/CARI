@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/grp_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_places"
+            android:title="Rooms &amp; Places" />
+        <!--android:icon="@drawable/ic_home"-->
+        <item
+            android:id="@+id/nav_deny_user"
+            android:title="Deny Appliances" />
+        <!--android:icon="@drawable/ic_whatshot"-->
+        <item
+            android:id="@+id/nav_allow_user"
+            android:title="Allow Appliances" />
+        <!--android:icon="@drawable/ic_schedule"-->
+
+    </group>
+    <group
+        android:id="@+id/grp_2"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_add_user"
+            android:title="Add User" />
+        <!--android:icon="@drawable/ic_highlight"-->
+        <item
+            android:id="@+id/nav_all_users"
+            android:title="All Users" />
+        <!--android:icon="@drawable/ic_settings"-->
+        <item
+            android:id="@+id/nav_profile_update"
+            android:title="Update Profile" />
+
+    </group>
+    <group
+        android:id="@+id/grp_5"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
+        <!--android:icon="@drawable/ic_highlight"-->
+        <item
+            android:id="@+id/nav_feedback"
+            android:title="Send Feedback" />
+        <!--android:icon="@drawable/ic_settings"-->
+        <item
+            android:id="@+id/nav_about_us"
+            android:title="About" />
+        <!--android:icon="@drawable/ic_settings"-->
+    </group>
+
+</menu>

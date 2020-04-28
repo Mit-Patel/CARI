@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cari_background_image"
+    android:backgroundTint="@color/blue_200_overlay"
+    android:backgroundTintMode="src_over"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        app:contentPadding="10dp">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_motion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Motion Detection &amp; Automatic Appliance Control"
+            app:thumbTint="@drawable/switch_thumb"
+            app:trackTint="@drawable/switch_track"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

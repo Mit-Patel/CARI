@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cari_background_image"
+    android:backgroundTint="@color/blue_200_overlay"
+    android:backgroundTintMode="src_over">
+
+    <ListView
+        android:id="@+id/lv_light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />
+
+    <TextView
+        android:id="@+id/txtNoLightFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="No lights in this room!"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:visibility="invisible" />
+</FrameLayout>

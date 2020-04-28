@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.avpti.cari">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".SettingsActivity"
+            android:parentActivityName=".PlacesActivity"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PlacesActivity" />
+        </activity>
+        <activity android:name=".PrivilegesDenyPlacesActivity" />
+        <activity
+            android:name=".PrivilegesAllowActivity"
+            android:parentActivityName=".PlacesActivity"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PlacesActivity" />
+        </activity>
+        <activity
+            android:name=".PrivilegesDenyActivity"
+            android:parentActivityName=".PlacesActivity"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PlacesActivity" />
+        </activity>
+        <activity
+            android:name=".UpdateUserActivity"
+            android:parentActivityName=".PlacesActivity"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PlacesActivity" />
+        </activity>
+        <activity
+            android:name=".AllUsersActivity"
+            android:parentActivityName=".PlacesActivity"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PlacesActivity" />
+        </activity>
+        <activity
+            android:name=".AddUserActivity"
+            android:parentActivityName=".PlacesActivity"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PlacesActivity" />
+        </activity>
+        <activity
+            android:name=".AboutUsActivity"
+            android:parentActivityName=".PlacesActivity"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PlacesActivity" />
+        </activity>
+        <activity
+            android:name=".FeedbackActivity"
+            android:parentActivityName=".PlacesActivity"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PlacesActivity" />
+        </activity>
+        <activity
+            android:name=".UpdateRoomActivity"
+            android:parentActivityName=".PlacesActivity"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PlacesActivity" />
+        </activity>
+        <activity
+            android:name=".UpdateLightActivity"
+            android:parentActivityName=".PlacesActivity"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PlacesActivity" />
+        </activity>
+        <activity
+            android:name=".AddRoomActivity"
+            android:parentActivityName=".PlacesActivity"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PlacesActivity" />
+        </activity>
+        <activity
+            android:name=".AddApplianceActivity"
+            android:parentActivityName=".PlacesActivity"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PlacesActivity" />
+        </activity>
+        <activity
+            android:name=".ApplianceActivity"
+            android:parentActivityName=".PlacesActivity"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PlacesActivity" />
+        </activity>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlacesActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".services.BackgroundIntentService"
+            android:exported="false" />
+        <service
+            android:name=".services.BackgroundServerConnection"
+            android:enabled="true" />
+    </application>
+
+</manifest>
